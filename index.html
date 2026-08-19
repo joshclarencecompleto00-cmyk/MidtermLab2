@@ -1,0 +1,812 @@
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sportiva | Sports Gallery</title>
+    <link rel="icon" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+  </head>
+
+  <body>
+   
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <!-- Brand -->
+
+        <a class="navbar-brand" href="#home">
+          <i class="bi bi-trophy-fill"></i>
+
+          SPORTIVA
+        </a>
+
+       
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home"> Home </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery"> Gallery </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#categories"> Categories </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about"> About </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+
+    <header id="home" class="hero">
+      <div class="container">
+        <span class="badge bg-warning text-dark mb-3"> SPORTS GALLERY </span>
+
+        <h1>
+          Passion.<br />
+          Power.<br />
+          Performance.
+        </h1>
+
+        <p class="lead mt-3">
+          Explore memorable moments from the world of sports.
+        </p>
+
+        <a href="#gallery" class="btn btn-light btn-lg">
+          <i class="bi bi-images"></i>
+
+          Explore Gallery
+        </a>
+
+        <button
+          class="btn btn-outline-light btn-lg ms-2"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sportsInfo"
+        >
+          <i class="bi bi-info-circle"></i>
+
+          Quick Info
+        </button>
+      </div>
+    </header>
+
+    
+
+    <section id="gallery" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="badge bg-dark mb-2"> OUR COLLECTION </span>
+
+          <h2 class="section-title">Sports Gallery</h2>
+
+          <p class="text-muted">A collection of exciting sports moments.</p>
+        </div>
+
+
+        <div class="row g-4">
+         
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card gallery-card">
+              <img
+                src="running.jpg"
+                alt="Track Running"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Track Running</h5>
+
+                <p class="card-text text-muted">
+                  Speed and endurance come together on the track.
+                </p>
+
+                <button
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-title="Track Running"
+                  data-description="Track athletes demonstrate speed, discipline, and endurance as they compete for victory."
+                  data-image="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=80"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+        
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card gallery-card">
+              <img
+                src="basketball.jpg"
+                alt="Basketball"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Basketball</h5>
+
+                <p class="card-text text-muted">
+                  Teamwork and quick decisions on the court.
+                </p>
+
+                <button
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-title="Basketball"
+                  data-description="Basketball combines teamwork, speed, strategy, and skill."
+                  data-image="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+         
+
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card gallery-card">
+              <img
+                src="cycling.jpg"
+                alt="Cycling"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Cycling</h5>
+
+                <p class="card-text text-muted">
+                  Balance, speed, and determination.
+                </p>
+
+                <button
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-title="Cycling"
+                  data-description="Cycling requires endurance, balance, and determination from start to finish."
+                  data-image="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=80"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+       
+
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card gallery-card">
+              <img
+                src="foootball.jpg"
+                alt="Football"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Football</h5>
+
+                <p class="card-text text-muted">
+                  Strategy and teamwork on the field.
+                </p>
+
+                <button
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-title="Football"
+                  data-description="Football is a team sport built around strategy, coordination, and determination."
+                  data-image="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=80"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+         
+
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card gallery-card">
+              <img
+                src="swimming.jpg"
+                alt="Swimming"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Swimming</h5>
+
+                <p class="card-text text-muted">
+                  Precision and endurance in the water.
+                </p>
+
+                <button
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-title="Swimming"
+                  data-description="Swimming challenges athletes to combine technique, endurance, and precision."
+                  data-image="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=1200&q=80"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+        
+
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card gallery-card">
+              <img
+                src="tennis.jpg"
+                alt="Tennis"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Tennis</h5>
+
+                <p class="card-text text-muted">Focus and accuracy.</p>
+
+                <button
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-title="Tennis"
+                  data-description="Tennis requires concentration, movement, accuracy, and quick reactions."
+                  data-image="https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=1200&q=80"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card gallery-card">
+              <img
+                src="baseball.jpg"
+                alt="Baseball"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Baseball</h5>
+
+                <p class="card-text text-muted">Timing and teamwork.</p>
+
+                <button
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-title="Baseball"
+                  data-description="Baseball combines timing, teamwork, strategy, and individual skill."
+                  data-image="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=1200&q=80"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card gallery-card">
+              <img
+                src="boxing.jpg"
+                alt="Boxing"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Boxing</h5>
+
+                <p class="card-text text-muted">Discipline and technique.</p>
+
+                <button
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-title="Boxing"
+                  data-description="Boxing emphasizes discipline, technique, conditioning, and strategy."
+                  data-image="https://images.unsplash.com/photo-1541252260730-0412e3e2108e?auto=format&fit=crop&w=1200&q=80"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+        
+
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card gallery-card">
+              <img
+                src="marathon.jpg"
+                alt="Marathon"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Marathon</h5>
+
+                <p class="card-text text-muted">Strength and endurance.</p>
+
+                <button
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-title="Marathon"
+                  data-description="Marathon running tests endurance, discipline, pacing, and mental strength."
+                  data-image="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card gallery-card">
+              <img
+                src="cricket.jpg"
+                alt="Cricket"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Cricket</h5>
+
+                <p class="card-text text-muted">Skill and teamwork.</p>
+
+                <button
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-title="Cricket"
+                  data-description="Cricket combines teamwork, strategy, timing, and individual skill."
+                  data-image="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=1200&q=80"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+         
+
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card gallery-card">
+              <img
+                src="vball.jpg"
+                alt="Volleyball"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Volleyball</h5>
+
+                <p class="card-text text-muted">Communication and teamwork.</p>
+
+                <button
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-title="Volleyball"
+                  data-description="Volleyball requires communication, coordination, teamwork, and quick reactions."
+                  data-image="https://images.unsplash.com/photo-1560089000-7433a4ebbd64?auto=format&fit=crop&w=1200&q=80"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+
+        
+
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="card gallery-card">
+              <img
+                src="fball.jpg"
+                alt="Soccer"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Soccer</h5>
+
+                <p class="card-text text-muted">Speed and coordination.</p>
+
+                <button
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-title="Soccer"
+                  data-description="Soccer combines speed, coordination, teamwork, and strategic thinking."
+                  data-image="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1200&q=80"
+                >
+                  View Image
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="categories" class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Categories</h2>
+
+          <p class="text-muted">Explore different types of sports.</p>
+        </div>
+
+        <div class="row g-4 text-center">
+          <div class="col-12 col-md-4">
+            <div class="category-box p-4 border rounded">
+              <i class="bi bi-dribbble fs-1"></i>
+
+              <h4 class="mt-3">Team Sports</h4>
+
+              <p class="text-muted">
+                Basketball, football, volleyball, and more.
+              </p>
+
+              <span class="badge bg-dark"> TEAMWORK </span>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="category-box p-4 border rounded">
+              <i class="bi bi-person-running fs-1"></i>
+
+              <h4 class="mt-3">Individual Sports</h4>
+
+              <p class="text-muted">Running, boxing, swimming, and tennis.</p>
+
+              <span class="badge bg-dark"> DISCIPLINE </span>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="category-box p-4 border rounded">
+              <i class="bi bi-bicycle fs-1"></i>
+
+              <h4 class="mt-3">Outdoor Sports</h4>
+
+              <p class="text-muted">Cycling, running, football, and more.</p>
+
+              <span class="badge bg-dark"> ADVENTURE </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="section-title">Featured Moments</h2>
+        </div>
+
+        <div id="sportsCarousel" class="carousel slide" data-bs-ride="carousel">
+         
+
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#sportsCarousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#sportsCarousel"
+              data-bs-slide-to="1"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#sportsCarousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+
+        
+
+          <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+              <img
+                src="running.jpg"
+                class="d-block w-100"
+                alt="Running"
+              />
+
+              <div class="carousel-caption">
+                <h3>Push Your Limits</h3>
+
+                <p>Every step brings you closer to your goal.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="basketball.jpg"
+                class="d-block w-100"
+                alt="Basketball"
+              />
+
+              <div class="carousel-caption">
+                <h3>Play Together</h3>
+
+                <p>Teamwork creates unforgettable moments.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="fball.jpg"
+                class="d-block w-100"
+                alt="Football"
+              />
+
+              <div class="carousel-caption">
+                <h3>Chase Victory</h3>
+
+                <p>Determination makes every moment count.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#sportsCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <!-- Next -->
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#sportsCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about" class="py-5 bg-white">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-6">
+            <span class="badge bg-dark mb-3"> ABOUT SPORTIVA </span>
+
+            <h2 class="section-title">Celebrating the World of Sports</h2>
+
+            <p class="text-muted mt-3">
+              Sportiva is a responsive sports gallery created to showcase
+              exciting moments from different sports.
+            </p>
+
+            <p class="text-muted">
+              The website combines photography, responsive design, and Bootstrap
+              components to create an interactive showcase.
+            </p>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="card border-0 shadow">
+              <div class="card-body p-4">
+                <h4>Why Sports Matter</h4>
+
+                <p class="text-muted">
+                  Sports encourage discipline, teamwork, confidence,
+                  perseverance, and an active lifestyle.
+                </p>
+
+                <button class="btn btn-dark">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="section-title">Contact Us</h2>
+
+          <p class="text-muted">Have a question about our gallery?</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="card shadow-sm border-0">
+              <div class="card-body p-4">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label"> Name </label>
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label"> Email </label>
+
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label"> Message </label>
+
+                    <textarea
+                      class="form-control"
+                      rows="4"
+                      placeholder="Write your message"
+                    >
+                    </textarea>
+                  </div>
+
+                  <button type="button" class="btn btn-dark w-100">
+                    <i class="bi bi-send"></i>
+
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">Sports Image</h5>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img id="modalImage" class="modal-img rounded" src="" alt="" />
+
+            <h4 id="modalHeading" class="mt-3"></h4>
+
+            <p id="modalDescription" class="text-muted"></p>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sportsInfo">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Sports Gallery</h5>
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <h5>About the Gallery</h5>
+
+        <p class="text-muted">
+          This website showcases different sports through responsive images and
+          interactive Bootstrap components.
+        </p>
+
+        <hr />
+
+        <h6>Gallery Features</h6>
+
+        <ul>
+          <li>12 sports images</li>
+
+          <li>Responsive Bootstrap grid</li>
+
+          <li>Image hover effects</li>
+
+          <li>Bootstrap modal</li>
+
+          <li>Image carousel</li>
+
+          <li>Responsive navigation</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <footer class="py-4">
+      <div class="container text-center">
+        <p class="mb-1">
+          <strong>
+            <i class="bi bi-trophy-fill"></i>
+            SPORTIVA
+          </strong>
+        </p>
+
+        <p class="small mb-0">Responsive Sports Gallery & Showcase Website</p>
+
+        <p class="small mt-2 mb-0">© 2026 Sportiva. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+```

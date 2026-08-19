@@ -1,0 +1,550 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  padding: 12px 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 75vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1600&q=80");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  color: white;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: bold;
+  line-height: 1.05;
+}
+
+.hero p {
+  max-width: 600px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+  width: 100%;
+}
+
+.section-title {
+  font-weight: bold;
+}
+
+/* =========================
+   GALLERY CARDS
+========================= */
+
+.gallery-card {
+  border: none;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================
+   GALLERY IMAGES
+   SAME SIZE
+========================= */
+
+
+/* =========================
+   GALLERY CARDS
+========================= */
+
+.gallery-card {
+  border: none;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================
+   GALLERY IMAGES
+   SAME SIZE AND SAME RATIO
+========================= */
+
+.gallery-card img {
+  width: 100%;
+  height: 250px;
+
+  /* Same shape for every image */
+  aspect-ratio: 3 / 2;
+
+  /* Crops different image dimensions evenly */
+  object-fit: cover;
+
+  /* Keeps the center of each image visible */
+  object-position: center center;
+
+  display: block;
+
+  transition: transform 0.4s ease;
+}
+
+
+/* =========================
+   IMAGE HOVER
+========================= */
+
+.gallery-card:hover img {
+  transform: scale(1.06);
+}
+
+
+/* =========================
+   CARD BODY
+========================= */
+
+.gallery-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.gallery-card .btn {
+  margin-top: auto;
+}
+
+/* =========================
+   CARD BODY
+========================= */
+
+.gallery-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.gallery-card .btn {
+  margin-top: auto;
+}
+
+/* =========================
+   MODAL IMAGE
+========================= */
+
+.modal-img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+/* =========================
+   CATEGORY
+========================= */
+
+.category-box {
+  height: 100%;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.category-box:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   CAROUSEL
+========================= */
+
+.carousel-item img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-control {
+  padding: 12px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background-color: #111;
+  color: white;
+}
+
+/* ==================================================
+   EXTRA LARGE SCREEN
+   1200px AND ABOVE
+================================================== */
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .hero {
+    min-height: 80vh;
+  }
+
+  .gallery-card img {
+    height: 250px;
+  }
+}
+
+/* ==================================================
+   LARGE SCREEN
+   992px - 1199px
+================================================== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .gallery-card img {
+    height: 240px;
+  }
+}
+
+/* ==================================================
+   TABLET
+   768px - 991px
+================================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero {
+    min-height: 65vh;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .carousel-item img {
+    height: 400px;
+  }
+
+  .gallery-card img {
+    height: 220px;
+  }
+}
+
+/* ==================================================
+   SMALL TABLET
+   576px - 767px
+================================================== */
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .hero {
+    min-height: 60vh;
+    text-align: center;
+  }
+
+  .hero .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carousel-item img {
+    height: 350px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+
+  .gallery-card img {
+    height: 210px;
+  }
+}
+
+/* ==================================================
+   MOBILE
+   BELOW 576px
+================================================== */
+
+@media (max-width: 575px) {
+  body {
+    font-size: 15px;
+  }
+
+  /* NAVBAR */
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .navbar-nav {
+    padding-top: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    padding: 10px 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* HERO */
+
+  .hero {
+    min-height: 70vh;
+    text-align: center;
+    padding: 60px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+    line-height: 1.1;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero .btn {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+
+  /* SECTIONS */
+
+  section {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  /* GALLERY */
+
+  .gallery-card {
+    margin-bottom: 5px;
+  }
+
+  /* ALL MOBILE GALLERY IMAGES SAME SIZE */
+
+  .gallery-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .gallery-card .card-body {
+    padding: 18px;
+  }
+
+  .gallery-card .card-title {
+    font-size: 1.15rem;
+  }
+
+  .gallery-card .card-text {
+    font-size: 0.9rem;
+  }
+
+  .gallery-card .btn {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* MODAL */
+
+  .modal-dialog {
+    margin: 10px;
+  }
+
+  .modal-img {
+    max-height: 50vh;
+  }
+
+  .modal-body {
+    padding: 15px;
+  }
+
+  /* CAROUSEL */
+
+  .carousel-item img {
+    height: 280px;
+  }
+
+  .carousel-caption {
+    padding-bottom: 15px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+  }
+
+  /* CATEGORY */
+
+  .category-box {
+    padding: 25px 15px !important;
+  }
+
+  /* OFFCANVAS */
+
+  .offcanvas {
+    width: 85% !important;
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 399px) {
+  .hero {
+    min-height: 65vh;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  /* SAME IMAGE SIZE ON VERY SMALL PHONES */
+
+  .gallery-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .carousel-item img {
+    height: 230px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1rem;
+  }
+
+  .carousel-caption p {
+    display: none;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
